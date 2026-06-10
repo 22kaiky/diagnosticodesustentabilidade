@@ -1,1 +1,87 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoScore Rural - Diagnóstico de Sustentabilidade ESG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EcoScore Rural</h1>
+    <p>Diagnóstico de Sustentabilidade (ESG) para Pequenas Fazendas</p>
+</header>
+
+<main>
+    <section>
+        <h2>Informações da Propriedade</h2>
+        <form id="esgForm">
+            <label for="nomePropriedade">Nome da Propriedade:</label>
+            <input type="text" id="nomePropriedade" name="nomePropriedade" required>
+
+            <label for="tamanhoPropriedade">Tamanho da Propriedade (hectares):</label>
+            <input type="number" id="tamanhoPropriedade" name="tamanhoPropriedade" required>
+
+            <label for="tipoProducao">Tipo de Produção:</label>
+            <input type="text" id="tipoProducao" name="tipoProducao" required>
+        </form>
+    </section>
+
+    <section>
+        <h2>Pilar Ambiental (E)</h2>
+
+        <label for="usoAgua">Uso consciente da água:</label>
+        <input type="range" id="usoAgua" name="usoAgua" min="0" max="3" value="0">
+
+        <label for="manejoResiduos">Manejo adequado de resíduos:</label>
+        <input type="range" id="manejoResiduos" name="manejoResiduos" min="0" max="3" value="0">
+
+        <label for="energiaRenovavel">Uso de energia renovável:</label>
+        <input type="range" id="energiaRenovavel" name="energiaRenovavel" min="0" max="3" value="0">
+    </section>
+
+    <section>
+        <h2>Pilar Social (S)</h2>
+
+        <label for="condicoesTrabalho">Boas condições de trabalho:</label>
+        <input type="range" id="condicoesTrabalho" name="condicoesTrabalho" min="0" max="3" value="0">
+
+        <label for="envolvimentoComunidade">Envolvimento com a comunidade:</label>
+        <input type="range" id="envolvimentoComunidade" name="envolvimentoComunidade" min="0" max="3" value="0">
+
+        <label for="capacitacao">Capacitação dos trabalhadores:</label>
+        <input type="range" id="capacitacao" name="capacitacao" min="0" max="3" value="0">
+    </section>
+
+    <section>
+        <h2>Pilar Governança (G)</h2>
+
+        <label for="gestaoFinanceira">Gestão financeira organizada:</label>
+        <input type="range" id="gestaoFinanceira" name="gestaoFinanceira" min="0" max="3" value="0">
+
+        <label for="registroProcessos">Registro de processos produtivos:</label>
+        <input type="range" id="registroProcessos" name="registroProcessos" min="0" max="3" value="0">
+
+        <label for="conformidadeLegal">Conformidade legal:</label>
+        <input type="range" id="conformidadeLegal" name="conformidadeLegal" min="0" max="3" value="0">
+    </section>
+
+    <section>
+        <h2>Resultado</h2>
+        <button type="button" id="calcularScore">Calcular Score ESG</button>
+        <output id="resultadoScore"></output>
+        <article id="recomendacoes"></article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 EcoScore Rural - Projeto Concurso Agrinho</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```
 
