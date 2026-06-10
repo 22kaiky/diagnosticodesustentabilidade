@@ -1,1 +1,130 @@
+```css
+/* ===========================
+   Central de Variáveis de Cores
+   =========================== */
+:root {
+    --cor-primaria: #2E7D32; /* Verde profundo - sustentabilidade e natureza */
+    --cor-secundaria: #AED581; /* Verde claro - frescor e renovação */
+    --cor-acento: #FFB74D; /* Laranja dourado - contraste e destaque */
+    
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --espacamento-base: 1rem;
+    --raio-borda: 8px;
+}
 
+/* ===========================
+   Reset Global
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+html, body {
+    height: 100%;
+    background-color: #FAFAFA;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Tipografia e Layout
+   =========================== */
+header {
+    background-color: var(--cor-primaria);
+    color: #FFF;
+    padding: calc(var(--espacamento-base) * 2);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: calc(var(--espacamento-base) * 2) auto;
+    padding: var(--espacamento-base);
+}
+
+section {
+    background-color: #FFF;
+    padding: calc(var(--espacamento-base) * 1.5);
+    margin-bottom: var(--espacamento-base);
+    border-radius: var(--raio-borda);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: var(--cor-primaria);
+    margin-bottom: calc(var(--espacamento-base) * 0.8);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="range"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: var(--espacamento-base);
+    border: 1px solid #CCC;
+    border-radius: var(--raio-borda);
+    font-size: 1rem;
+}
+
+input[type="range"] {
+    accent-color: var(--cor-acento);
+}
+
+button {
+    display: inline-block;
+    background-color: var(--cor-acento);
+    color: #FFF;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: var(--raio-borda);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF9800;
+}
+
+output {
+    display: block;
+    margin-top: var(--espacamento-base);
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+}
+
+article#recomendacoes {
+    margin-top: var(--espacamento-base);
+    padding: var(--espacamento-base);
+    background-color: var(--cor-secundaria);
+    color: #1B5E20;
+    border-radius: var(--raio-borda);
+}
+
+footer {
+    text-align: center;
+    padding: calc(var(--espacamento-base) * 1.5);
+    background-color: #E0E0E0;
+    color: #333;
+    font-size: 0.9rem;
+}
+```
